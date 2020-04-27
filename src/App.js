@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-        Redux
+        Redux Boilerplate
     </div>
   );
 }
