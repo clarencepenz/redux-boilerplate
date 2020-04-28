@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { fetchPost } from '../../actions/postAction'
 
 class Blog extends Component {
     render() {
@@ -10,5 +12,8 @@ class Blog extends Component {
     }
 }
 
+const mapStateToProps = state => ({
+    posts: state.posts.posts
+})
 
-export default Blog;
+export default connect(mapStateToProps, {fetchPost})(Blog);
