@@ -3,10 +3,13 @@ import { connect } from 'react-redux'
 import { fetchPost } from '../../actions/postAction'
 
 class Blog extends Component {
+    componentDidMount(){
+        this.props.fetchPost()
+    }
     render() {
         return (
             <div>
-                
+                <h1>Blog</h1>
             </div>
         )
     }
